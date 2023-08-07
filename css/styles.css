@@ -1,0 +1,55 @@
+body {
+    background-color: #e3e3e3;
+    margin: auto;
+    width: 900px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 32px;
+}
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+}
+section {
+    display: flex;
+}
+article {
+    flex: 1;
+}
+footer {
+    display: flex;
+}
+footer div {
+    flex: 1;
+}
+footer img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 50;
+}
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Artboard 1.png');
+    /* height: 50%; */
+    border-radius: 20px;
+    padding: 10px;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* position: relative; */
+}
