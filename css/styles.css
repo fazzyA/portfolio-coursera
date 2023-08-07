@@ -1,7 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+
+    scroll-behavior: smooth;
+    transition: all .2s linear;
+   
+}
 body {
     background-color: #e3e3e3;
     margin: auto;
-    width: 900px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h1 {
@@ -26,9 +36,13 @@ nav li {
 }
 section {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
 }
 article {
     flex: 1;
+    padding: 32px;
 }
 footer {
     display: flex;
@@ -43,13 +57,55 @@ footer img {
     width: 100px;
     height: 50;
 }
-.hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Artboard 1.png');
-    /* height: 50%; */
-    border-radius: 20px;
-    padding: 10px;
-    /* background-position: center;
+
+.hero{
+    background-image: linear-gradient( rgba(7, 7, 7, 0), rgb(241, 139, 107)), url('../images/hero_bg.jpg');
+    /* background: url("../images/hero_bg.jpg"); */
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
-    /* position: relative; */
+    height: 150%;
+    padding: 9em 5em;
+
+} 
+.hero::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    top:0%;
+    height:100vh;
+    width: 100%;
+}
+.hero h1{
+    text-align: center;
+    color: #fff;
+}
+.centered {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+    padding:50px 90px;
+    color:#fff
+}
+.card {
+    background-color: #ec8869;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: center;
+}
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 0;
 }
