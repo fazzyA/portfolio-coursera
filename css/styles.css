@@ -170,3 +170,24 @@ footer img {
 .card p {
     margin-bottom: 0;
 }
+@media only screen and (max-width:768px){
+    header{
+        width: 100%;
+        margin: 0;
+        font-size:12px
+    }
+    section{
+        width: 100%;
+        display: block;
+    }
+    .centered{
+        padding: 2px;
+    }
+    .hero{
+        height: auto;
+        padding: 2em;
+    }
+    footer{
+        width: 100%;
+    }
+}
